@@ -1,0 +1,11 @@
+﻿{
+  "inbounds": [
+    {
+      "port": 10000,
+      "protocol": "vless",
+      "settings": { "clients": [ { "id": "4d39f714-6aaf-43ec-8466-cc6a4f05182e", "level":0, "email":"user@13rus.casacam.net" } ] },
+      "streamSettings": { "network":"ws", "wsSettings": { "path":"/ws" } }
+    }
+  ],
+  "outbounds": [ { "protocol":"freedom", "settings":{} } ]
+}
