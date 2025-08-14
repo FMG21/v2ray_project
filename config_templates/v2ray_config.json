@@ -1,11 +1,38 @@
-﻿{
+{
   "inbounds": [
     {
-      "port": 10000,
+      "port": 1024,
       "protocol": "vless",
-      "settings": { "clients": [ { "id": "4d39f714-6aaf-43ec-8466-cc6a4f05182e", "level":0, "email":"user@13rus.casacam.net" } ] },
-      "streamSettings": { "network":"ws", "wsSettings": { "path":"/ws" } }
+      "settings": {
+        "clients": [
+          {
+            "id": "58a79b31-2a9f-d1c9-1a3f-e80cffb9c308",
+            "level": 0,
+            "email": "user@example.com",
+            "decryption": "none"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/v2ray"
+        }
+      }
     }
   ],
-  "outbounds": [ { "protocol":"freedom", "settings":{} } ]
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ],
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  }
+
 }
+
