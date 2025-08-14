@@ -1,7 +1,7 @@
 {
   "inbounds": [
     {
-      "port": 1024,
+      "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -16,6 +16,15 @@
       },
       "streamSettings": {
         "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "certificates": [
+            {
+              "certificateFile": "/etc/letsencrypt/live/13rus.casacam.net/fullchain.pem",
+              "keyFile": "/etc/letsencrypt/live/13rus.casacam.net/privkey.pem"
+            }
+          ]
+        },
         "wsSettings": {
           "path": "/v2ray"
         }
@@ -23,16 +32,4 @@
     }
   ],
   "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {}
-    }
-  ],
-  "log": {
-    "access": "",
-    "error": "",
-    "loglevel": "warning"
-  }
-
-}
 
